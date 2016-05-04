@@ -9,13 +9,10 @@ if you have issues with Docker-Compose versions incompatible with your version o
 
 `curl -sSL https://get.docker.com/ubuntu/ | sudo sh`
 
-###Install Docker-Compose
+###Install ARM-Compose
 
-```
-curl -L https://github.com/docker/compose/releases/download/1.1.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-
-chmod +x /usr/local/bin/docker-compose
-```
+see
+https://github.com/hypriot/arm-compose
 
 ###Get the repo
 

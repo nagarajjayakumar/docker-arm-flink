@@ -1,4 +1,4 @@
-FROM hypriot/rpi-alpine-scratch
+FROM armv7/armhf-ubuntu
 
 #requirements
 RUN apt-get update; apt-get install -y curl wget supervisor openssh-server openssh-client nano
