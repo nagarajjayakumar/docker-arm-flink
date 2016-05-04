@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM hypriot/rpi-alpine-scratch
 
 #requirements
 RUN apt-get update; apt-get install -y curl wget supervisor openssh-server openssh-client nano
