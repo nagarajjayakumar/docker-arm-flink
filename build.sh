@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+docker i#!/usr/bin/env bash
 #Kill cluster and remove all containers
 docker-compose kill
 #docker rm $(docker ps -a -q)

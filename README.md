@@ -3,16 +3,14 @@
 ##Installation
 ###Install Docker
 
-https://docs.docker.com/installation/
-
-if you have issues with Docker-Compose versions incompatible with your version of Docker try
-
-`curl -sSL https://get.docker.com/ubuntu/ | sudo sh`
+Install the following ARM build according to https://github.com/umiddelb/armhf/wiki/Get-Docker-up-and-running-on-the-RaspberryPi-%28ARMv6%29-in-four-steps-%28Wheezy%29
 
 ###Install ARM-Compose
 
-see
-https://github.com/hypriot/arm-compose
+Install the ARM build of Docker compose (https://github.com/hypriot/arm-compose).
+Download dep package from https://packagecloud.io/Hypriot/Schatzkiste/packages/debian/wheezy/docker-compose_1.6.0-25_armhf.deb
+and install using dpkg 
+
 
 ###Get the repo
 
