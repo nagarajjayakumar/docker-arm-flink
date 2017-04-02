@@ -8,8 +8,8 @@ RUN mkdir /var/run/sshd
 
 #install Java 7 Oracle JDK
 RUN mkdir -p /usr/java/default && \
-    curl -Ls 'http://download.oracle.com/otn-pub/java/jdk/7u51-b13/jdk-7u51-linux-x64.tar.gz' -H 'Cookie: oraclelicense=accept-securebackup-cookie' | \
-    tar --strip-components=1 -xz -C /usr/java/default/
+   curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie"  'http://download.oracle.com/otn/java/jdk/8u65-b17/jdk-8u65-linux-arm32-vfp-hflt.tar.gz' | \ tar --strip-components=1 -xz -C /usr/java/default/
+
 ENV JAVA_HOME /usr/java/default/
 
 #Install Java Open JDK
@@ -29,3 +29,4 @@ ADD supervisor.conf /etc/supervisor/
 
 # default command / not overridable CMD needed for supervisord
 #CMD ["supervisord", "-c", "/etc/supervisor.conf"]
+
