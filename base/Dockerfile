@@ -9,7 +9,7 @@ RUN mkdir /var/run/sshd
 #install Java 7 Oracle JDK
 RUN mkdir -p /usr/java/default && \
    curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie"  'https://edelivery.oracle.com/otn-pub/java/jdk/8u65-b17/jdk-8u65-linux-arm32-vfp-hflt.tar.gz' | \ 
-   tar --strip-components=1 -xz -C /usr/java/default/
+   tar -zxvf - -C  /usr/java/default/
 
 ENV JAVA_HOME /usr/java/default/
 
