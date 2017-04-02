@@ -9,7 +9,7 @@ taskmanager.numberOfTaskSlots: %nb_slots%
 
 parallelization.degree.default: %parallelism%
 
-env.java.home: /usr/java/default
+env.java.home: /usr/java/default/jdk1.8.0_65/
 
 #==============================================================================
 # Web Frontend
