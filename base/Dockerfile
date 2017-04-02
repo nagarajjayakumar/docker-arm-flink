@@ -8,7 +8,7 @@ RUN mkdir /var/run/sshd
 
 #install Java 7 Oracle JDK
 RUN mkdir -p /usr/java/default && \
-   wget -q -O - https://github.com/nagarajjayakumar/docker-arm-flink/raw/master/jdk-8u65-linux-arm64-vfp-hflt.tar.gz | tar -zxvf - -C  /usr/java/default/
+   wget -q -O - https://github.com/nagarajjayakumar/docker-arm-flink/raw/master/jdk-8u65-linux-arm32-vfp-hflt.tar.gz | tar -zxvf - -C  /usr/java/default/
 
 ENV JAVA_HOME /usr/java/default/jdk1.8.0_65/
 
