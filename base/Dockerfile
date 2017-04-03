@@ -1,5 +1,5 @@
 #FROM armv7/armhf-ubuntu
-FROM rockrxf/armv8_ubuntu
+FROM ericvh/arm64-ubuntu
 
 #requirements
 RUN apt-get update; apt-get install -y curl wget supervisor openssh-server openssh-client nano
